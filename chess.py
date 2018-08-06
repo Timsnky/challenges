@@ -1,3 +1,5 @@
+#Challenge :  https://coderbyte.com/editor/guest:Eight%20Queens:JavaScript
+
 import sys
 import random
 

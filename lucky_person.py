@@ -1,3 +1,10 @@
+#Challenge :
+# Lucky Alive Person In a Circle : Given n people standing in a circle where 1st is having sword,
+#find the luckiest person in the circle, if from 1st soldier who is having a sword each have to
+#kill the next soldier and handover the sword to next soldier, in turn, the soldier will kill the
+#adjacent soldier and handover the sword to next soldier such that one soldier remains in this war
+#who is not killed by anyone.
+
 class LuckyPerson(object):
     def __init__(self, peopleCount):
         self.peopleCount = peopleCount

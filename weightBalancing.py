@@ -1,3 +1,5 @@
+#Challenge : https://www.coderbyte.com/editor/guest:Scale%20Balancing:JavaScript
+
 class WeightBalancing(object):
     def __init__(self, weightList):
         self.weightList = weightList
