@@ -138,7 +138,7 @@ class RobotWalk:
         print("-------------- Final Verdict ------------------------------")
         print("Max Steps " + str(self.maxMovement))
         print("Correct Paths : " + str(paths))
-        print("Total Ending Points : " + str(len(reachedLocations)))
+        print("Total Unique Ending Points : " + str(len(reachedLocations)))
         print("Time Taken : " + str(endTime - startTime))
         print("-----------------------------------------------------------")
 
