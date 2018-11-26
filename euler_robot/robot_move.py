@@ -159,6 +159,6 @@ class RobotWalk:
 # Evaluate the motion for a range of steps starting from 5 to 70
 # We are only factoring in steps divisible by 5 since for the current
 # task the other combination wont have any correct paths
-for index in range(5, 35, 5):
+for index in range(5, 70, 5):
     robot = RobotWalk(index, 72, 1, 0, 0, 0)
     robot.evaluateMovement()
