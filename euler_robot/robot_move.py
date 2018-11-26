@@ -117,16 +117,16 @@ class RobotWalk:
 
                 if lastStep != None:
                     if lastStep == 0:
-                        antiClockRobot.shiftRobotCenter()
-
-                    if lastStep == 1:
                         clockwiseRobot.shiftRobotCenter()
 
-                clockwiseRobot.moveRobot(0)
-                clockEnd = (clockwiseRobot.x, clockwiseRobot.y, clockwiseRobot.xCenter, clockwiseRobot.yCenter, 0)
+                    if lastStep == 1:
+                        antiClockRobot.shiftRobotCenter()
 
-                antiClockRobot.moveRobot(1)
-                antiClockEnd = (antiClockRobot.x, antiClockRobot.y, antiClockRobot.xCenter, antiClockRobot.yCenter, 1)
+                antiClockRobot.moveRobot(0)
+                antiClockEnd = (antiClockRobot.x, antiClockRobot.y, antiClockRobot.xCenter, antiClockRobot.yCenter, 0)
+
+                clockwiseRobot.moveRobot(1)
+                clockEnd = (clockwiseRobot.x, clockwiseRobot.y, clockwiseRobot.xCenter, clockwiseRobot.yCenter, 1)
 
                 newReachedLocations[clockEnd] = newReachedLocations.get(clockEnd, 0) + ways
                 newReachedLocations[antiClockEnd] = newReachedLocations.get(antiClockEnd, 0) + ways
