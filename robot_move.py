@@ -60,17 +60,12 @@ class Robot:
         xEnd = round(xEnd, 2)
         yEnd = round(yEnd, 2)
 
-        if yEnd == 0:
-            yEnd = abs(yEnd)
-        if xEnd == 0:
-            xEnd = abs(xEnd)
-
         return [xEnd, yEnd]
 
     def shiftRobotCenter(self):
         """
-        Shift the center of motion of the robot in instances whwere the movement angle
-        changes by 180 degree
+        Shift the center of motion of the robot in instances where the movement direction changes
+        from clockwise to anti clockwise or the inverse
         """
         newCenter = self.getEndPoint(self.xCenter, self.yCenter, self.x, self.y, 180)
 
